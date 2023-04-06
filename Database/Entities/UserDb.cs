@@ -1,7 +1,7 @@
 ﻿
 namespace Database.Entities
 {
-    public sealed class User
+    public sealed class UserDb
     {
         /// <summary>
         /// Gets or sets the user's id.

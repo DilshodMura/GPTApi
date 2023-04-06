@@ -1,7 +1,7 @@
 ﻿
 namespace Database.Entities
 {
-    public sealed class History
+    public sealed class HistoryDb
     {
         /// <summary>
         /// Gets or sets history id.
@@ -12,7 +12,7 @@ namespace Database.Entities
         /// Gets or sets the user's id as ref.
         /// </summary>
         public long UserId { get; set; }
-        public User User { get; set; }
+        public UserDb User { get; set; }
 
         /// <summary>
         /// Gets or sets time of the sent message.
@@ -22,6 +22,6 @@ namespace Database.Entities
         /// <summary>
         /// Gets or sets the topics.
         /// </summary>
-        public ICollection<Topic> Topics { get; set; }
+        public ICollection<TopicDb> Topics { get; set; }
     }
 }

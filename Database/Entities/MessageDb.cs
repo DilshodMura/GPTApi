@@ -1,7 +1,7 @@
 ﻿
 namespace Database.Entities
 {
-    public sealed class Message
+    public sealed class MessageDb
     {
         /// <summary>
         /// Gets or sets the id for message.
@@ -13,7 +13,7 @@ namespace Database.Entities
         /// </summary>
         public long TopicId { get; set; }
 
-        public Topic Topic { get; set; }
+        public TopicDb Topic { get; set; }
 
         /// <summary>
         /// Gets or sets the message text.
@@ -24,6 +24,11 @@ namespace Database.Entities
         /// Gets or sets the message time.
         /// </summary>
         public DateTime MessageTime { get; set; }
+
+        /// <summary>
+        /// Gets or sets if message from user 
+        /// </summary>
+        public bool IsUser { get; set; }
 
     }
 }
