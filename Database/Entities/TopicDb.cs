@@ -8,6 +8,6 @@ namespace Database.Entities
         public long HistoryId { get; set; }
         public HistoryDb History { get; set; }
 
-        public ICollection<MessageDb> Messages { get; set; } 
+        public ICollection<MessageDb> Messages { get; set; }
     }
 }

@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GPTApi", "GPTApi\GPTApi.csproj", "{94EE9F06-3709-4DE8-B538-315B49F14364}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GPTApi", "GPTApi\GPTApi.csproj", "{94EE9F06-3709-4DE8-B538-315B49F14364}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{C30D71A3-80F9-4BC6-BE2B-47955A4070FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Database", "Database\Database.csproj", "{C30D71A3-80F9-4BC6-BE2B-47955A4070FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{C18E55B4-F848-4824-A464-91A1983BF19B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{C18E55B4-F848-4824-A464-91A1983BF19B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{73325EB5-4C20-4EAA-BFB2-22030B8B87EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{73325EB5-4C20-4EAA-BFB2-22030B8B87EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{65BB35DC-EADD-4B15-8015-5A583B6E8DB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{73325EB5-4C20-4EAA-BFB2-22030B8B87EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73325EB5-4C20-4EAA-BFB2-22030B8B87EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73325EB5-4C20-4EAA-BFB2-22030B8B87EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65BB35DC-EADD-4B15-8015-5A583B6E8DB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65BB35DC-EADD-4B15-8015-5A583B6E8DB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65BB35DC-EADD-4B15-8015-5A583B6E8DB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65BB35DC-EADD-4B15-8015-5A583B6E8DB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

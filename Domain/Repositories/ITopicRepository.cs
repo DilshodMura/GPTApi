@@ -7,6 +7,6 @@ namespace Domain.Repositories
         public Task<ITopic[]> GetAllAsync();
         public Task AddAsync(ITopic topic);
         public Task DeleteAsync(long id);
-        public Task UpdateNameAsync(string name);
+        public Task UpdateAsync(ITopic topic);
     }
 }

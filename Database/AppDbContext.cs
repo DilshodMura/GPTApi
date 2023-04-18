@@ -12,6 +12,7 @@ namespace Database
         public DbSet<MessageDb> Messages { get; set; }
 
         public DbSet<TopicDb> Topics { get; set; }
+        public DbSet<RefreshTokenDb> RefreshTokens { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options)
                     : base(options)

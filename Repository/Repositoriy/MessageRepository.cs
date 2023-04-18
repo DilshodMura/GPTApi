@@ -17,15 +17,21 @@ namespace Repository.Repositoriy
             _mapper = mapper;
         }
 
+        /// <summary>
+        /// Add message.
+        /// </summary>
         public async Task AddAsync(IMessage message)
         {
             await _dbContext.Messages.AddAsync(_mapper.Map<MessageDb>(message));
             await _dbContext.SaveChangesAsync();
         }
 
+        /// <summary>
+        /// Get all topics.
+        /// </summary>
         public async Task<IMessage[]> GetAllAsync()
         {
-            var messages = await _dbContext.Messages
+            var messages = await _dbContext.Messages.AsNoTracking()
                 .Include(m => m.Topic)
                 .OrderByDescending(m => m.MessageTime)
                 .ToArrayAsync();

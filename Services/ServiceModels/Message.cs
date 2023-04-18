@@ -1,6 +1,6 @@
 ﻿using Domain.Entities;
 
-namespace Repository.BusinessModels
+namespace Services.ServiceModels
 {
     public sealed class Message:IMessage
     {

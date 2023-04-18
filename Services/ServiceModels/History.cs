@@ -1,6 +1,6 @@
 ﻿using Domain.Entities;
 
-namespace Repository.BusinessModels
+namespace Services.ServiceModels
 {
     public sealed class History : IHistory
     {
@@ -21,5 +21,4 @@ namespace Repository.BusinessModels
         public DateTime MsgTime { get; internal set; }
         public ICollection<ITopic> Topics { get; internal set;}
     }
-
 }
